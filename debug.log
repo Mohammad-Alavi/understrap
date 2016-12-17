@@ -1,0 +1,17 @@
+[1217/040149:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[1217/040149:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[1217/134944:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: The system cannot find the path specified. (0x3)
+[1217/134944:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1217/134944:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: The system cannot find the path specified. (0x3)
+[1217/140656:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: The system cannot find the path specified. (0x3)
+[1217/140656:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1217/140656:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: The system cannot find the path specified. (0x3)
+[1217/141307:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: The system cannot find the path specified. (0x3)
+[1217/141307:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1217/141307:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: The system cannot find the path specified. (0x3)
+[1217/142930:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: The system cannot find the path specified. (0x3)
+[1217/142930:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1217/142930:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: The system cannot find the path specified. (0x3)
+[1217/143509:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: The system cannot find the path specified. (0x3)
+[1217/143509:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1217/143509:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: The system cannot find the path specified. (0x3)

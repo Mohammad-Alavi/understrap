@@ -15,7 +15,7 @@ var browserSyncWatchFiles = [
 // browser-sync options
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
-    proxy: "localhost/wordpress/",
+    proxy: "localhost:8080/wordpress/",
     notify: false
 };
 
