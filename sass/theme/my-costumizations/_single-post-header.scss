@@ -1,0 +1,20 @@
+.entry-meta{
+    display: inline-block;
+}
+.post-avatar{
+    display: block;
+    float: right;
+    img{
+        //@include border-radius(50%);
+        width: 40px;
+    }
+}
+
+.posted-on, .byline{
+    display: block;
+    margin-right: 50px;
+}
+
+.entry-title{
+    clear: both;
+}

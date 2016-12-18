@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="<?php echo esc_html( $container ); ?>" >
 
 				<div class="navbar-header">
-
+					
 					<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 					<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse"
 					        data-target=".exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false"
@@ -54,6 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</a>
 					<?php } else {
 						the_custom_logo();
+			
 } ?><!-- end custom logo -->
 
 				</div>
@@ -75,4 +76,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</nav><!-- .site-navigation -->
 
+		<div class="container-fluid" id="header-banner">
+			<!--<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
+			title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>-->
+			<h1><?php bloginfo( 'name' ); ?></h1>
+			<p><?php bloginfo( 'description' ); ?></p>
+			<div id="header-devider">
+		</div>
 	</div><!-- .wrapper-navbar end -->
