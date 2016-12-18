@@ -79,7 +79,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="container-fluid" id="header-banner">
 			<!--<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
 			title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>-->
-			<h1><?php bloginfo( 'name' ); ?></h1>
+			<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+				<h1><?php bloginfo( 'name' ); ?></h1>
+			</a>
 			<p><?php bloginfo( 'description' ); ?></p>
 			<div id="header-devider">
 		</div>

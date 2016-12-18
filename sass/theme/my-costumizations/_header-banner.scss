@@ -1,11 +1,22 @@
 #header-banner{
     text-align: center;
     padding: 0;
-    h1{
-        margin: 0 auto 0 auto;
+    @include media-breakpoint-down(xs){
+        h1{
+            margin: 10px auto 0 auto;
+        }
+        p{
+            margin: 0 auto 10px auto;
+        }
     }
-    p{
-        margin: 0 auto 0 auto;
+    @include media-breakpoint-between(xs, sm){
+        h1{
+            font-size: 4rem;
+            margin: 20px auto 0 auto;
+        }
+        p{
+            margin: 0 auto 20px auto;
+        }
     }
 }
 
