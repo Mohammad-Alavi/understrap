@@ -42,15 +42,17 @@ if ( is_front_page() && is_home() ) {
 
 						<?php /* Start the Loop */ ?>
 
+						<?php //* ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 
 							<?php
+							//if($wp_query->current_post==2): echo "<h1>edrar</h1>"; endif;
 							if ( 'masonry' === $posts_style ) :
 								get_template_part( 'loop-templates/content', 'card' );
 							elseif ( 'grid' === $posts_style ) :
 
 								get_template_part( 'loop-templates/content', 'grid' );
-							else :
+							else :				
 								/*
 								 * Include the Post-Format-specific template for the content.
 								 * If you want to override this in a child theme, then include a file
@@ -61,7 +63,7 @@ if ( is_front_page() && is_home() ) {
 							?>
 
 						<?php endwhile; ?>
-
+						<?php // */?>
 					<?php else : ?>
 
 						<?php get_template_part( 'loop-templates/content', 'none' ); ?>

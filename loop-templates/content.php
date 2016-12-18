@@ -28,12 +28,7 @@
 
 	<div class="entry-content">
 
-		<?php
-		if (is_home() && !get_next_post())
-		the_content();
-		else
-		the_excerpt();
-		?>
+		<?php the_excerpt(); ?>
 
 		<?php
 		wp_link_pages( array(
