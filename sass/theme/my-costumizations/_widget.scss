@@ -1,0 +1,59 @@
+.widget{
+    ul{
+        list-style-type: none;
+        padding: 0;
+        @include clearfix;
+
+        li{
+            display: block;
+            clear: right;
+            
+            &::before{
+                display: block;
+                float: right;
+                padding-bottom: 2px;
+                margin-left: 3px;
+                font-family: 'fontawesome';
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.widget_recent_entries{
+    ul{
+        li{
+            &::before{
+                content: "\f036";
+            }
+        }
+    }
+}
+
+.widget_recent_comments{
+    ul{
+        li{
+            &::before{
+                content: "\f075";                
+                padding-bottom: 3px;
+            }
+        }
+    }
+}
+
+.widget_archive{
+    ul{
+        li{
+            &::before{
+                content: "\f187";
+            }
+        }
+    }
+}
+
+.widget-title{
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid black;
+}
