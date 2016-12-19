@@ -1,5 +1,7 @@
 .entry-meta{
     display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .post-avatar{
     display: block;
@@ -13,8 +15,10 @@
 .posted-on, .byline{
     display: block;
     margin-right: 50px;
+    max-height: 20px;
 }
 
 .entry-title{
-    clear: both;
+    font-weight: bold;
+    font-size: 1.8rem;
 }
