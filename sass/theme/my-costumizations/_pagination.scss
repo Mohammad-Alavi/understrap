@@ -1,0 +1,19 @@
+nav[aria-label="Page navigation"]{
+    text-align: center;
+
+    ul{
+        padding: 0;
+    }
+}
+
+.page-item:last-child{
+    .page-link{
+        border-radius: 0;
+    }
+}
+
+.page-item:first-child{
+    .page-link{
+        border-radius: 0;
+    }
+}
