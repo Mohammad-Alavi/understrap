@@ -76,6 +76,10 @@ function understrap_entry_footer() {
 		comments_popup_link( __( 'Leave a comment', 'understrap' ), __( '1 Comment', 'understrap' ), __( '% Comments', 'understrap' ) );
 		echo '</span>';
 	}
+
+	if( is_home() ) {
+		echo '<div id="footer-bottom-seperator"></div>';
+	}
 }
 endif;
 

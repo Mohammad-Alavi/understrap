@@ -1,3 +1,9 @@
+.entry-footer{
+    span{
+        margin: 5px 0;
+    }
+}
+
 .cat-links{
     display: block;
     font-size: 0.9rem;
@@ -11,4 +17,13 @@
 .edit-link{
     display: block;
     font-size: 0.9rem;
+}
+
+#footer-bottom-seperator{
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
 }
