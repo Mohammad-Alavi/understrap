@@ -142,8 +142,7 @@ gulp.task('scripts', function() {
 
     // End - All BS4 stuff
 
-    basePaths.dev + 'js/skip-link-focus-fix.js'
-    ])
+    basePaths.dev + 'js/skip-link-focus-fix.js', 'js/hide_search.js'])
     .pipe(concat('theme.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./js/'));
@@ -157,8 +156,7 @@ gulp.task('scripts', function() {
 
     // End - All BS4 stuff
 
-    basePaths.dev + 'js/skip-link-focus-fix.js'
-    ])
+    basePaths.dev + 'js/skip-link-focus-fix.js', 'js/hide_search.js'])
     .pipe(concat('theme.js'))
     .pipe(gulp.dest('./js/'));
 });

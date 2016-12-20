@@ -6,3 +6,66 @@
         text-align: right;
     }
 }
+
+.site-navigation{
+    > div{ // first container
+        padding: 0;
+    }
+}
+
+.navbar-toggler{
+    float: right;
+}
+/*
+// Costumeized Search-Box
+*/
+
+#search-container{
+    @include clearfix;
+    padding: 1em;
+    background: #4d4d4d;
+    background: hsl(0, 0%, 30%);
+    z-index: 2;
+    width: 100%;
+    display: none;
+
+    label{
+    display: none;
+    }
+
+    .search-field{
+        max-width: 362px;
+        float: right;
+        padding: 1rem 2rem 1rem 4rem;
+        font-size: 20px;
+        font-size: 2rem;
+        background-color: #fff;
+        border: 0;
+    }
+}
+
+.search-toggle{
+    float: right;
+    width: 54px;
+    height: auto;
+    padding: 12px;
+    margin-right: 10px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+
+    &::hover{
+        background: #4d4d4d;
+        background: hsl(0, 0%, 30%);
+    }
+}
+
+.search-toggle.active{
+    background: #4d4d4d;
+    background: hsl(0, 0%, 30%);
+}
+
+// Hide the search button everywhere on the site
+#searchsubmit{ 
+    display: none;
+}

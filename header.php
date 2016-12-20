@@ -46,6 +46,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 					        data-target=".exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false"
 					        aria-label="Toggle navigation"></button>
 
+					<div class="search-toggle">
+						<i class="fa fa-search"></i>
+						<a href="#search-container" class="sr-only"><?php _e( 'Search', 'my-blog' ); ?></a>
+					</div>
+				
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
 					<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
@@ -75,6 +80,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div> <!-- .container -->
 
 		</nav><!-- .site-navigation -->
+
+		<div id="search-container" class="search-box-weapper">
+			<div class="search-box">
+				<?php get_search_form() ?>
+			</div>
+		</div>
 
 		<div class="container-fluid" id="header-banner">
 			<!--<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
