@@ -7,7 +7,8 @@
         li{
             display: block;
             clear: right;
-            
+            padding: 3px 0;
+
             &::before{
                 display: block;
                 float: right;
@@ -19,6 +20,7 @@
         }
     }
 }
+
 .widget_recent_entries{
     ul{
         li{
@@ -33,8 +35,8 @@
     ul{
         li{
             &::before{
-                content: "\f075";                
-                padding-bottom: 3px;
+                content: "\f075";
+                margin-top: -2.5px;
             }
         }
     }
