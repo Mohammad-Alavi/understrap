@@ -1,6 +1,14 @@
 .entry-footer{
     span{
         margin: 5px 0;
+
+        &:first-of-type{
+            margin-top: 10px;
+        }
+
+        &:last-of-type{
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -50,5 +58,4 @@
     border-top: medium double #333;
     color: #333;
     text-align: center;
-    margin-top: 10px;
 }
