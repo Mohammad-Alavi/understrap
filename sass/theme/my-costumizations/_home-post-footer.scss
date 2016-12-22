@@ -12,6 +12,31 @@
 .tags-links{
     display: block;
     font-size: 0.9rem;
+
+    a{
+        &::before{
+        content: "\f02b";
+        padding-bottom: 2px;
+        margin-right: 3px;
+        font-family: 'fontawesome';
+        font-size: 1rem;
+        }
+    }
+}
+
+.comments-link{
+    display: block;
+    font-size: 0.9rem;
+
+    a{
+        &::before{
+        content: "\f086";
+        padding-bottom: 2px;
+        margin-right: 3px;
+        font-family: 'fontawesome';
+        font-size: 1rem;
+        }
+    }
 }
 
 .edit-link{
