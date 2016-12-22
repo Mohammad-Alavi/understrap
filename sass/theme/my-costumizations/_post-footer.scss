@@ -52,10 +52,17 @@
     font-size: 0.9rem;
 }
 
-#footer-bottom-seperator{
+#post-bottom-seperator{
     padding: 0;
     border: none;
     border-top: medium double #333;
     color: #333;
     text-align: center;
+}
+
+// Apply this styles only in single-post
+#single-wrapper{
+    .entry-footer{
+        border-bottom: 1px solid #eceeef;
+    }
 }
