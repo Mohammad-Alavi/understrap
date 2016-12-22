@@ -78,7 +78,7 @@ function understrap_entry_footer() {
 	}
 
 	if( is_home() ) {
-		echo '<div id="footer-bottom-seperator"></div>';
+		echo '<div id="post-bottom-seperator"></div>';
 	}
 }
 endif;
