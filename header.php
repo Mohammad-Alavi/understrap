@@ -34,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content',
 		'understrap' ); ?></a>
 
-		<nav class="navbar navbar-dark bg-inverse site-navigation" itemscope="itemscope"
+		<nav class="navbar navbar-costume site-navigation" itemscope="itemscope"
 		     itemtype="http://schema.org/SiteNavigationElement">
 
 			<div class="<?php echo esc_html( $container ); ?>" >
@@ -87,6 +87,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 
+		<div class="header-devider"></div>
+			
 		<div class="container-fluid" id="header-banner">
 			<!--<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
 			title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>-->
@@ -94,6 +96,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h1><?php bloginfo( 'name' ); ?></h1>
 			</a>
 			<p><?php bloginfo( 'description' ); ?></p>
-			<div id="header-devider">
-		</div>
+		</div> <!-- banner container -->
+		
+		<div class="header-devider"></div>
+			
 	</div><!-- .wrapper-navbar end -->

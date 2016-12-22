@@ -7,16 +7,103 @@
     }
 }
 
-.site-navigation{
+// toggle menu caret
+.dropdown-toggle:before{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .3em;
+    vertical-align: middle;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+}
+
+.dropdown-toggle:after{
+    display: none;
+}
+
+#exCollapsingNavbar{
+    text-align: right;
+}
+nav.site-navigation{
     > div{ // first container
         padding: 0;
-        vertical-align: middle;
     }
 }
 
 .navbar-toggler{
     float: right;
 }
+
+.dropdown-menu{
+    background-color: white;
+    left: auto;
+}
+
+// Dark links against a white background
+.navbar-costume{
+    .navbar-toggle{
+        border: 1px solid $semiblack;
+    }
+
+    .icon-bar{
+        border-bottom: 1px solid $semiblack;
+    }
+    
+    .dropdown-menu{
+        background-color: white;
+        
+        .menu-item{
+            a:hover{
+                background-color: rgba(0,0,0,.1);
+            }
+        }
+    }
+
+    .navbar-brand{
+        padding: 0;
+        line-height: 40px;
+    }
+    .navbar-brand,
+    .navbar-toggler{
+        color: $navbar-dark-active-color;
+
+    @include hover-focus{
+        color: $navbar-dark-active-color;
+        }
+    }
+
+    .navbar-nav{
+        .nav-link{
+        color: $navbar-dark-color;
+
+            @include hover-focus{
+                color: $navbar-dark-hover-color;
+            }
+        }
+
+        .open > .nav-link,
+        .active > .nav-link,
+        .nav-link.open,
+        .nav-link.active{
+            @include plain-hover-focus{
+                color: $navbar-dark-active-color;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        background-image: $navbar-dark-toggler-bg;
+        border-color: $navbar-dark-toggler-border;
+    }
+
+    .navbar-divider {
+        background-color: rgba(255,255,255,.075);
+    }
+}
+
 /*
 // Costumeized Search-Box
 */
@@ -49,9 +136,8 @@
     float: right;
     width: 54px;
     height: auto;
-    padding: 9px 0;
-    margin-right: 10px;
-    color: #fff;
+    padding: 8px 0;
+    color: $semiblack;
     text-align: center;
     cursor: pointer;
 
@@ -59,9 +145,15 @@
         background: #4d4d4d;
         background: hsl(0, 0%, 30%);
     }
+
+    @include media-breakpoint-only(xs){
+        margin-right: 10px;
+    }
 }
 
 .search-toggle.active{
+    color: white;
+    @include border-radius(3px);
     background: #4d4d4d;
     background: hsl(0, 0%, 30%);
 }
@@ -69,4 +161,27 @@
 // Hide the search button everywhere on the site
 #searchsubmit{ 
     display: none;
+}
+
+@include media-breakpoint-up(sm){
+    .navbar-brand{
+        display: none;
+    }
+
+    .navbar-header{
+        float: right;
+    }
+    #exCollapsingNavbar{
+        //overflow: hidden;
+    }
+    
+    #main-menu{
+        .menu-item{
+                float: right;
+            }
+    }
+
+    .search-toggle{
+        margin-left: 10px;
+    }
 }
