@@ -1,26 +1,33 @@
 #header-banner{
     text-align: center;
     padding: 0;
-    @include media-breakpoint-down(xs){
+    
+    // Small devices (landscape phones, less than 768px)
+    @include media-breakpoint-down(sm){
         h1{
-            margin: 10px auto 0 auto;
+            font-size: 4.75rem;
+            margin: 50px auto 0 auto;
         }
+
         p{
-            margin: 0 auto 10px auto;
+            margin: 0 auto 50px auto;
         }
     }
-    @include media-breakpoint-between(xs, sm){
+
+// Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md){
         h1{
-            font-size: 4rem;
-            margin: 20px auto 0 auto;
+            font-size: 5.5rem;
+            margin: 60px auto 0 auto;
         }
+
         p{
-            margin: 0 auto 20px auto;
+            margin: 0 auto 60px auto;
         }
     }
 }
 
-#header-devider{
+.header-devider{
     border: 0;
     height: 1px;
     border-bottom: 2px solid lighten($semiblack, 20%);
