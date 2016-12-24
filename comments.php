@@ -45,6 +45,7 @@ if ( get_next_comments_link() ) { ?>
 			</nav><!-- #comment-nav-above -->
 		<?php endif; // check for comment navigation. ?>
 
+		<?php /* ?>
 		<ol class="comment-list">
 			<?php
 			wp_list_comments( array(
@@ -53,6 +54,11 @@ if ( get_next_comments_link() ) { ?>
 			) );
 			?>
 		</ol><!-- .comment-list -->
+		<?php //*/ ?>
+
+		<ol class="comment-list">
+			<?php wp_list_comments( 'type=comment&callback=my_blog_comment' ); ?>
+		</ol>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through. ?>
 			<nav class="comment-navigation" id="comment-nav-below">
