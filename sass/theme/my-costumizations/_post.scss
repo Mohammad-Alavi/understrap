@@ -1,0 +1,17 @@
+.post{
+    background-color: #fff;
+    border: 1px solid $widgetbordercolor;
+    border-bottom: none;
+
+    img.wp-post-image{
+        margin-bottom: 20px;
+    }
+}
+
+#main .post{
+    &:last-of-type{
+        #post-bottom-seperator{
+            margin-bottom: 0;
+        }
+    }
+}
