@@ -5,6 +5,12 @@
     .nav-link{
         text-align: right;
     }
+
+    .dropdown-menu{
+        left: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
 
 // toggle menu caret
@@ -27,6 +33,7 @@
 #exCollapsingNavbar{
     text-align: right;
 }
+
 nav.site-navigation{
     > div{ // first container
         padding: 0;
@@ -37,49 +44,30 @@ nav.site-navigation{
     float: right;
 }
 
-.dropdown-menu{
-    background-color: white;
-    left: auto;
-}
-
 // Dark links against a white background
 .navbar-costume{
-    .navbar-toggle{
-        border: 1px solid $semiblack;
-    }
+    background-color: #23282d;
 
-    .icon-bar{
-        border-bottom: 1px solid $semiblack;
-    }
-    
-    .dropdown-menu{
-        background-color: white;
-        
-        .menu-item{
-            a:hover{
-                background-color: rgba(0,0,0,.1);
-            }
-        }
-    }
+    .navbar-toggle { border: 1px solid #fff; }
+    .icon-bar { border-bottom: 1px solid #fff; }
+    .dropdown-menu { background-color: $gray-dark; }
 
-    .navbar-brand{
-        padding: 0;
-        line-height: 40px;
-    }
     .navbar-brand,
-    .navbar-toggler{
+    .navbar-toggler {
         color: $navbar-dark-active-color;
 
-    @include hover-focus{
-        color: $navbar-dark-active-color;
+        @include hover-focus {
+            color: $navbar-dark-active-color;
         }
     }
 
-    .navbar-nav{
-        .nav-link{
-        color: $navbar-dark-color;
+    .navbar-nav {
+        .nav-link {
+            color: $navbar-dark-color;
+            margin: 0;
+            padding: 5px;
 
-            @include hover-focus{
+            @include hover-focus {
                 color: $navbar-dark-hover-color;
             }
         }
@@ -87,8 +75,8 @@ nav.site-navigation{
         .open > .nav-link,
         .active > .nav-link,
         .nav-link.open,
-        .nav-link.active{
-            @include plain-hover-focus{
+        .nav-link.active {
+            @include plain-hover-focus {
                 color: $navbar-dark-active-color;
             }
         }
@@ -118,7 +106,7 @@ nav.site-navigation{
     display: none;
 
     label{
-    display: none;
+        display: none;
     }
 
     .search-field{
@@ -137,9 +125,9 @@ nav.site-navigation{
     width: 54px;
     height: auto;
     padding: 8px 0;
-    color: $semiblack;
+    color: #fff;
     text-align: center;
-    cursor: pointer;
+    cursor: pointer;         
 
     &::hover{
         background: #4d4d4d;
@@ -152,7 +140,6 @@ nav.site-navigation{
 }
 
 .search-toggle.active{
-    color: white;
     @include border-radius(3px);
     background: #4d4d4d;
     background: hsl(0, 0%, 30%);
@@ -170,9 +157,8 @@ nav.site-navigation{
 
     .navbar-header{
         float: right;
-    }
-    #exCollapsingNavbar{
-        //overflow: hidden;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     
     #main-menu{
@@ -183,5 +169,25 @@ nav.site-navigation{
 
     .search-toggle{
         margin-left: 10px;
+        display: table-cell;
     }
+
+    #exCollapsingNavbar{
+        line-height: 40px;
+    }
+
+    #main-menu{
+        vertical-align: middle;
+
+        li{
+            a{
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md){
+
 }
