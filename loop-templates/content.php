@@ -16,7 +16,7 @@
 			<div class="entry-meta">
 				<?php understrap_posted_on(); ?>
 			</div><!-- .entry-meta -->
-
+			<div class="meta-devider"></div>
 		<?php endif; ?>
 
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),

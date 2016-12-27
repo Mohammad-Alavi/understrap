@@ -4,6 +4,17 @@
 
 #single-wrapper{
     .entry-footer{
-        border-bottom: 1px solid #eceeef;
+        border-bottom: 1px solid #dfdfdf;
+        padding: 10px;
+    }
+
+    .post-navigation{
+        margin: 20px 0;
+        background-color: #fff;
+        border: 1px solid $widgetbordercolor;
+        vertical-align: middle;
+        @include clearfix;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }

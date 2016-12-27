@@ -3,7 +3,9 @@
 */
 
 #comments{
-    margin-top: 15px;
+    padding: 15px 15px 0 15px;
+    background-color: #fff;
+    border: 1px solid $widgetbordercolor;
 
     ol{
         padding: 0;
@@ -34,6 +36,7 @@
 
 .comments-title{
     font-size: 1.4rem;
+    margin: 15px auto;
 }
 
 .comment-content{
