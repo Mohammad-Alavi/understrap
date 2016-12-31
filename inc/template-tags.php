@@ -7,16 +7,16 @@
  * @package understrap
  */
 
-
 if ( ! function_exists( 'understrap_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
 function understrap_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
-	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>, <time class="updated" datetime="%3$s">' . __( ' Edited %4$s', 'understrap' ) . '</time>';
-	}
+	// I commented this
+	// if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+	// 	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>, <time class="updated" datetime="%3$s">' . __( ' Edited %4$s', 'understrap' ) . '</time>';
+	// }
 
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
@@ -49,7 +49,9 @@ function understrap_entry_footer() {
 		edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */
-			esc_html__( 'Edit %s', 'understrap' ),
+			// I added this
+			esc_html__( 'Edit', 'understrap' ),
+			//esc_html__( 'Edit %s', 'understrap' ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
 		'<span class="edit-link">',
