@@ -1,10 +1,10 @@
 .entry-footer{
     border-top: 1px solid $widgetbordercolor;
-    padding-top: 10px;
+    border-bottom: 1px solid $widgetbordercolor;
+    padding: 10px 20px;
     
     span{
-        margin: 5px 0;
-
+        padding: 5px 0;
         // &:first-of-type{
         //     margin-top: 10px;
         // }
@@ -42,8 +42,7 @@
     a{
         &::before{
         content: "\f086";
-        padding-bottom: 2px;
-        margin-right: 3px;
+        padding: 0 3px 2px 3px;
         font-family: 'fontawesome';
         font-size: 1rem;
         }
@@ -56,6 +55,7 @@
 }
 
 #post-bottom-seperator{
+    display: none; // Display set to none! remove it if u want to use it!
     padding: 0;
     border: none;
     border-top: medium double #333;

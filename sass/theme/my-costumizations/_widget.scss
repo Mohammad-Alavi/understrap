@@ -1,12 +1,11 @@
 .widget{
     margin: 0 0 20px 0;
-    padding: 20px;
     background: #fff;
     border: 1px solid $widgetbordercolor;
 
     ul{
         list-style-type: none;
-        padding: 0;
+        padding: 0 10px 10px 10px;
         margin: 0;
         @include clearfix;
 
@@ -64,8 +63,9 @@
 }
 
 .widget-title{
-    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.1rem;
     margin-bottom: 10px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid black;
+    background-color: $blueish;
 }
