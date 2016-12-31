@@ -5,7 +5,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
 "POT-Creation-Date: 2016-12-18 15:46+0330\n"
 "POT-Revision-Date: Mon Jul 04 2016 09:13:18 GMT+0200 (CEST)\n"
-"PO-Revision-Date: 2016-12-22 21:30+0330\n"
+"PO-Revision-Date: 2016-12-31 14:01+0330\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
@@ -178,13 +178,13 @@ msgstr ""
 #: ../inc/template-tags.php:18
 #, php-format
 msgid " Edited %4$s"
-msgstr ""
+msgstr "ویرایش شده در تاریخ %4$s"
 
 #: ../inc/template-tags.php:29
 #, php-format
 msgctxt "post date"
 msgid "Posted on %s"
-msgstr "ارسال شده درتاریخ %s"
+msgstr "ارسال شده در تاریخ %s"
 
 #: ../inc/template-tags.php:34
 #, php-format
