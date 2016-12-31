@@ -2,20 +2,43 @@
     padding: 0;
     float: right;
 
-    .nav-link{
-        text-align: right;
+    & > li{
+        a{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
     }
 
     .dropdown-menu{
+        background-color: $navbarbgcolor;
         left: auto;
-        padding-right: 10px;
-        padding-left: 10px;
+        padding: 0 10px;
+        border-color: rgba(255, 255, 255, 0.15);
+        border-radius: 0;
+
+        li{
+            &:last-of-type{
+                a{
+                    border-bottom: none;
+                }
+            } 
+
+            .nav-link{
+                text-align: right;
+                border-bottom: 1px solid #392f28;
+            }
+        }
     }
+}
+
+.main-menu-toggle-only{
+    border-bottom: 1px solid #392f28;
 }
 
 // toggle menu caret
 .dropdown-toggle:before{
     display: inline-block;
+    margin-top: 0.4rem;
     width: 0;
     height: 0;
     margin-left: .3em;
@@ -32,6 +55,7 @@
 
 #exCollapsingNavbar{
     text-align: right;
+    float: right;
 }
 
 nav.site-navigation{
@@ -46,13 +70,14 @@ nav.site-navigation{
 
 // Dark links against a white background
 .navbar-costume{
-    background-color: #23282d;
+    background-color: $navbarbgcolor;
 
     .navbar-toggle { border: 1px solid #fff; }
     .icon-bar { border-bottom: 1px solid #fff; }
     .dropdown-menu { background-color: $gray-dark; }
 
     .navbar-brand,
+    .navbar-brand-fullbar,
     .navbar-toggler {
         color: $navbar-dark-active-color;
 
@@ -116,7 +141,7 @@ nav.site-navigation{
         font-size: 20px;
         font-size: 2rem;
         background-color: #fff;
-        border: 0;
+        border: none;
     }
 }
 
@@ -150,7 +175,38 @@ nav.site-navigation{
     display: none;
 }
 
+.navbar-brand-fullbar{
+    float: left;
+    padding-top: $navbar-brand-padding-y;
+    padding-bottom: $navbar-brand-padding-y;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: $font-size-lg;
+    line-height: inherit;
+
+    @include hover-focus {
+        text-decoration: none;
+    }
+}
+
+@include media-breakpoint-only(xs){
+    .navbar-brand-fullbar{
+        display: none;
+    }
+}
+
 @include media-breakpoint-up(sm){
+    .navbar-costume{
+        padding-left: 0;
+        padding-right: 0;
+
+        .container{
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+        }
+    }
+
     .navbar-brand{
         display: none;
     }
@@ -169,7 +225,7 @@ nav.site-navigation{
 
     .search-toggle{
         margin-left: 10px;
-        display: table-cell;
+        margin-right: 10px;
     }
 
     #exCollapsingNavbar{
@@ -186,8 +242,4 @@ nav.site-navigation{
             }
         }
     }
-}
-
-@include media-breakpoint-up(md){
-
 }

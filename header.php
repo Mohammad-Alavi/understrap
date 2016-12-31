@@ -60,7 +60,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php } else {
 						the_custom_logo();
 			
-} ?><!-- end custom logo -->
+					} ?><!-- end custom logo -->
 
 				</div>
 
@@ -77,6 +77,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				); ?>
 
+				<!-- Your site title as branding in the menu -->
+				<?php if ( ! has_custom_logo() ) { ?>
+				<a class="navbar-brand-fullbar" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
+					title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+					<?php bloginfo( 'name' ); ?>
+				</a>
+				<?php } else {
+					the_custom_logo();
+		
+				} ?><!-- end custom logo -->
+
 			</div> <!-- .container -->
 
 		</nav><!-- .site-navigation -->
@@ -86,12 +97,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php get_search_form() ?>
 			</div>
 		</div>
-
-		<div class="header-devider"></div>
-			
+		
 		<div class="container-fluid" id="header-banner">
-			<!--<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
-			title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>-->
 			<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 				<h1><?php bloginfo( 'name' ); ?></h1>
 			</a>
