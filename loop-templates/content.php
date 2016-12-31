@@ -16,7 +16,14 @@
 			<div class="entry-meta">
 				<?php understrap_posted_on(); ?>
 			</div><!-- .entry-meta -->
+
+			<!-- I added this -->
+			<?php if ( is_sticky() ) :
+				echo '<i class="fa fa-bookmark fa-2x" aria-hidden="true"></i>';
+			endif; ?>
+			
 			<div class="meta-devider"></div>
+
 		<?php endif; ?>
 
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
@@ -24,7 +31,7 @@
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<?php echo get_the_post_thumbnail( $post->ID, 'featured' ); ?>
 
 	<div class="entry-content">
 

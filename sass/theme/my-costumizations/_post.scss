@@ -9,9 +9,18 @@
 }
 
 #main .post{
+    margin-bottom: 30px;
+
     &:last-of-type{
+        margin-bottom: 0;
         #post-bottom-seperator{
             margin-bottom: 0;
         }
     }
+}
+
+.fa-bookmark{
+    position: absolute;
+    left: 50px;
+    top: -4px;
 }
