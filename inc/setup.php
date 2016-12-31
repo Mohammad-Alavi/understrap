@@ -69,6 +69,8 @@ if ( ! function_exists( 'understrap_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		// I Added this
+		add_image_size( 'featured', 1060, 350, true);
 		/*
 		 * Enable support for Post Formats.
 		 * See http://codex.wordpress.org/Post_Formats
